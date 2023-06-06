@@ -1,0 +1,154 @@
+ftorr@DESKTOP-K8OHPOJ MINGW64 ~/OneDrive/Escritorio/20230605-FabianaTorre
+$ git init
+Initialized empty Git repository in C:/Users/ftorr/OneDrive/Escritorio/20230605-FabianaTorre/.git/
+
+ftorr@DESKTOP-K8OHPOJ MINGW64 ~/OneDrive/Escritorio/20230605-FabianaTorre (main)
+$ git remote add origin https://github.com/fabtrr22/20230605-FabianaTorre.git
+
+ftorr@DESKTOP-K8OHPOJ MINGW64 ~/OneDrive/Escritorio/20230605-FabianaTorre (main)
+$ touch comandos.txt main.js index.html
+
+ftorr@DESKTOP-K8OHPOJ MINGW64 ~/OneDrive/Escritorio/20230605-FabianaTorre (main)
+$ git add .
+
+ftorr@DESKTOP-K8OHPOJ MINGW64 ~/OneDrive/Escritorio/20230605-FabianaTorre (main)
+$ git commit -m "commit 01 de FabianaTorre"
+[main (root-commit) 8cf5c86] commit 01 de FabianaTorre
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 comandos.txt
+ create mode 100644 index.html
+ create mode 100644 main.js
+
+ftorr@DESKTOP-K8OHPOJ MINGW64 ~/OneDrive/Escritorio/20230605-FabianaTorre (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 246 bytes | 123.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/fabtrr22/20230605-FabianaTorre.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+ftorr@DESKTOP-K8OHPOJ MINGW64 ~/OneDrive/Escritorio/20230605-FabianaTorre (main)
+$ git checkout -b feature01
+Switched to a new branch 'feature01'
+
+ftorr@DESKTOP-K8OHPOJ MINGW64 ~/OneDrive/Escritorio/20230605-FabianaTorre (feature01)
+$ mkdir Terminal Hardware
+
+ftorr@DESKTOP-K8OHPOJ MINGW64 ~/OneDrive/Escritorio/20230605-FabianaTorre (feature01)
+$ touch Terminal/resumen.txt
+
+ftorr@DESKTOP-K8OHPOJ MINGW64 ~/OneDrive/Escritorio/20230605-FabianaTorre (feature01)
+$ touch Hardware/resumen.txt
+
+ftorr@DESKTOP-K8OHPOJ MINGW64 ~/OneDrive/Escritorio/20230605-FabianaTorre (feature01)
+$ ls -R
+.:
+comandos.txt  Hardware/  index.html  main.js  Terminal/
+
+./Hardware:
+resumen.txt
+
+./Terminal:
+resumen.txt
+
+ftorr@DESKTOP-K8OHPOJ MINGW64 ~/OneDrive/Escritorio/20230605-FabianaTorre (feature01)
+$ git add .
+
+ftorr@DESKTOP-K8OHPOJ MINGW64 ~/OneDrive/Escritorio/20230605-FabianaTorre (feature01)
+$ git status
+On branch feature01
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Hardware/resumen.txt
+        new file:   Terminal/resumen.txt
+
+
+ftorr@DESKTOP-K8OHPOJ MINGW64 ~/OneDrive/Escritorio/20230605-FabianaTorre (feature01)
+$ git commit -m "commit 02 de FabianaTorre"
+[feature01 bed0fc6] commit 02 de FabianaTorre
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Hardware/resumen.txt
+ create mode 100644 Terminal/resumen.txt
+
+ftorr@DESKTOP-K8OHPOJ MINGW64 ~/OneDrive/Escritorio/20230605-FabianaTorre (feature01)
+$ git status
+On branch feature01
+nothing to commit, working tree clean
+
+ftorr@DESKTOP-K8OHPOJ MINGW64 ~/OneDrive/Escritorio/20230605-FabianaTorre (feature01)
+$ git push -u origin feature01
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 364 bytes | 182.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'feature01' on GitHub by visiting:
+remote:      https://github.com/fabtrr22/20230605-FabianaTorre/pull/new/feature01
+remote:
+To https://github.com/fabtrr22/20230605-FabianaTorre.git
+ * [new branch]      feature01 -> feature01
+branch 'feature01' set up to track 'origin/feature01'.
+
+ftorr@DESKTOP-K8OHPOJ MINGW64 ~/OneDrive/Escritorio/20230605-FabianaTorre (feature01)
+$ git checkout -b feature02
+Switched to a new branch 'feature02'
+
+ftorr@DESKTOP-K8OHPOJ MINGW64 ~/OneDrive/Escritorio/20230605-FabianaTorre (feature02)
+$ git status
+On branch feature02
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Terminal/resumen.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ftorr@DESKTOP-K8OHPOJ MINGW64 ~/OneDrive/Escritorio/20230605-FabianaTorre (feature02)
+$ git status
+On branch feature02
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Hardware/resumen.txt
+        modified:   Terminal/resumen.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ftorr@DESKTOP-K8OHPOJ MINGW64 ~/OneDrive/Escritorio/20230605-FabianaTorre (feature02)
+$ git add .
+
+ftorr@DESKTOP-K8OHPOJ MINGW64 ~/OneDrive/Escritorio/20230605-FabianaTorre (feature02)
+$ git status
+On branch feature02
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Hardware/resumen.txt
+        modified:   Terminal/resumen.txt
+
+
+ftorr@DESKTOP-K8OHPOJ MINGW64 ~/OneDrive/Escritorio/20230605-FabianaTorre (feature02)
+$ git commit -m "commit 03 de FabianaTorre"
+[feature02 1683203] commit 03 de FabianaTorre
+ 2 files changed, 8 insertions(+)
+
+ftorr@DESKTOP-K8OHPOJ MINGW64 ~/OneDrive/Escritorio/20230605-FabianaTorre (feature02)
+$ git push -u origin feature02
+Enumerating objects: 11, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (6/6), 497 bytes | 248.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'feature02' on GitHub by visiting:
+remote:      https://github.com/fabtrr22/20230605-FabianaTorre/pull/new/feature02
+remote:
+To https://github.com/fabtrr22/20230605-FabianaTorre.git
+ * [new branch]      feature02 -> feature02
+branch 'feature02' set up to track 'origin/feature02'
